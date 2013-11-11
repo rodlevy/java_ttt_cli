@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.05" errors="0" skipped="0" tests="1" name="com.mycompany.app.AppTest">
+<testsuite failures="0" time="0.005" errors="0" skipped="0" tests="8" name="com.mycompany.app.BoardTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -65,5 +65,12 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.001" classname="com.mycompany.app.AppTest" name="testBoard"/>
+  <testcase time="0.001" classname="com.mycompany.app.BoardTest" name="should_return_availableMoves"/>
+  <testcase time="0" classname="com.mycompany.app.BoardTest" name="should_createNewGrid"/>
+  <testcase time="0" classname="com.mycompany.app.BoardTest" name="should_checkIfOccupied"/>
+  <testcase time="0.001" classname="com.mycompany.app.BoardTest" name="should_checkForWinner"/>
+  <testcase time="0" classname="com.mycompany.app.BoardTest" name="players_should_take_turns"/>
+  <testcase time="0" classname="com.mycompany.app.BoardTest" name="testWinningPossibilities"/>
+  <testcase time="0" classname="com.mycompany.app.BoardTest" name="should_checkForTie"/>
+  <testcase time="0" classname="com.mycompany.app.BoardTest" name="board_should_store_position_of_player_moves"/>
 </testsuite>

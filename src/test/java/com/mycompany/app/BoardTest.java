@@ -64,6 +64,9 @@ public class BoardTest {
 		Board.storePosition(position, player);
 		assertTrue(Board.grid.equals("X-X------"));
 	}
+	public void board_should_simulate_a_move() throws Exception{
+		
+	}
 	
 	
 }
