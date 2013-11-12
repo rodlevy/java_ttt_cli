@@ -1,21 +1,21 @@
 package com.mycompany.app;
 
-/**
- * Hello world!
- *
- */
 public class App
 {
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
-        funny();
         Board newBoard = new Board();
-        newBoard.printBoard();
+        newBoard.grid = "-----XX--";
+        Interface newInterface = new Interface();
+        Computer newComputer = new Computer();
+        
+        Game newGame = new Game(newBoard, newInterface, newComputer);
+        newGame.play();
     }
 
     public static void funny(){
-    	System.out.println( "funny" );
+    	System.out.println( "funniest" );
     }
 
 

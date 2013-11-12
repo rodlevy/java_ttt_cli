@@ -97,10 +97,18 @@ public class BoardTest {
 
   @Test
   public void board_should_check_for_participant_win() throws Exception{
-    Board.grid = "XX--O----";
+    Board.grid = "----O--XX";
     Board.checkParticipantWin(Board.grid, 'X');
-    assertTrue(Board.grid.equals("XXO-O----"));
+    assertTrue(Board.grid.equals("----O-OXX"));
   }
+
+  @Test
+  public void board_should_check_3rd_move_for_participant_win() throws Exception{
+    Board.grid = "X--OO--XX";
+    Board.checkParticipantWin(Board.grid, 'O');
+    assertTrue(Board.grid.equals("X--OOO-XX"));
+  }
+
 
   @Test
   public void board_should_return_the_number_of_player_moves() throws Exception{
@@ -108,5 +116,10 @@ public class BoardTest {
     assertTrue(Board.playerMoves().equals(2));
   }
 
+  @Test
+  public void board_should_return_the_number_of_computer_moves() throws Exception{
+    Board.grid = "XXO-O----";
+    assertTrue(Board.computerMoves().equals(2));
+  }
 
 }

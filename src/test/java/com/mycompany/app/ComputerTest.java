@@ -41,4 +41,18 @@ public class ComputerTest {
 	  Computer.computerMove(board);
 	  assertTrue(board.grid.equals("X--OO---X"));
 	}
+	 @Test
+	  public void test_another_second_computer_move() throws Exception{
+	    Board board = new Board();
+	    board.grid = "XX--O----";
+	    Computer.computerMove(board);
+	    assertTrue(board.grid.equals("XXO-O----"));
+	  }
+	 @Test
+	 public void test_third_computer_move() throws Exception{
+	    Board board = new Board();
+	    board.grid = "X--OO--XX";
+	    Computer.computerMove(board);
+	    assertTrue(board.grid.equals("X--OOO-XX"));
+	  }
 }

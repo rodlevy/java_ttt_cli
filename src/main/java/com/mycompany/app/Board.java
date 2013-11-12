@@ -29,9 +29,9 @@ public class Board {
 		}
 		return false;
 	}
-	
+
 	public static boolean checkParticipantWin(String grid, char player){
-	  for(int i = 0; i <= 8; i ++){
+	  for(int i = 0; i <= 8; i++){
 	    if(!isOccupied(grid,i)){
 	      storePosition(i, player);
 	        if(checkForWinner(player)){
@@ -39,11 +39,9 @@ public class Board {
 	            return true;
 	          }else{
 	            storePosition(i, 'O');
-	            return false;
 	          }
 	        }else{
 	          removePosition(i);
-	          return false;
 	        }
 	    }
 	  }
@@ -75,7 +73,7 @@ public class Board {
 	}
 
 	public static String takeTurn(String player) {
-		return player.equals("X") ? "O" : "X" ;	
+		return player.equals("X") ? "O" : "X" ;
 	}
 
 	public static void storePosition(int position, char player) {
@@ -83,13 +81,13 @@ public class Board {
 		replacer.setCharAt(position, player);
 		Board.grid = replacer.toString();
 	}
-	
+
 	public static void removePosition(int position) {
     StringBuilder replacer = new StringBuilder(Board.grid);
     replacer.setCharAt(position, '-');
     Board.grid = replacer.toString();
   }
-	
+
 	public static boolean oppositeCorners(){
 	  if (grid.charAt(0) == 'X' && grid.charAt(8) =='X' || grid.charAt(0) == 'O' && grid.charAt(8) == 'O' ||
 	      grid.charAt(2) == 'X' && grid.charAt(6) == 'X' || grid.charAt(2) == 'O' && grid.charAt(6) == 'O'){
@@ -97,7 +95,7 @@ public class Board {
 		}
 		return false;
 	}
-	
+
 	public static boolean leftCornerComputerBottomRtPlayer(){
     if (grid.charAt(0) == 'O' && grid.charAt(8) == 'X'){
       return true;
@@ -110,11 +108,22 @@ public class Board {
     }
     return false;
   }
-	
+
 	public static Integer playerMoves(){
 	  int count = StringUtils.countMatches(Board.grid, "X");
 	  return count;
 	  }
-	
-	
+
+	public static Integer computerMoves(){
+    int count = StringUtils.countMatches(Board.grid, "O");
+    return count;
+    }
+	public static void randomFill(){
+	  int i = 0;
+	  while(isOccupied(grid, i)){
+	    i ++;
+	  }
+	  storePosition(i, 'O');
+	}
+
 }
