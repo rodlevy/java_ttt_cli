@@ -8,7 +8,6 @@ public class Interface {
 	public static void main( String[] args )
 	{
 		Interface newInterface = new Interface();
-		System.out.println("this workds");
 
 	}
 	public static void printBoard(String grid){
@@ -22,7 +21,6 @@ public class Interface {
 
 	  	Scanner in = new Scanner(System.in);
 	  	int move = in.nextInt();
-//    	in.close();
     	return move;
 	}
 

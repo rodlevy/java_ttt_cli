@@ -6,7 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 
 public class Board {
 
-	public static final String[] WINPOS = new String[]{"012", "345", "678", "036","147","258","048"};
+	public static final String[] WINPOS = new String[]{"012", "345", "246", "678", "036","147","258","048"};
 	public static String grid = "---------";
 
 //	public static String printBoard(){

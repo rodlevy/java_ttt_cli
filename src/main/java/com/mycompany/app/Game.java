@@ -29,9 +29,11 @@ public class Game {
 	    newInterface.playerWins();
 	  }else{
 	    newComputer.computerMove(newBoard);
+	    // System.out.println("before player move");
+	    // newInterface.printBoard(newBoard.grid);
 	    if(newBoard.checkForWinner('O')){
+	      newInterface.printBoard(newBoard.grid);
 	      newInterface.computerWins();
-	      newInterface.printBoard(grid);
 	      return;
 	    }
 	    play();
