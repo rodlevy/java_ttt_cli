@@ -12,7 +12,7 @@ public class Interface {
 	}
 	public static void printBoard(String grid){
 
-		System.out.println(grid.substring(0,3));
+		System.out.println("\n\n" + grid.substring(0,3));
 		System.out.println(grid.substring(3,6));
 		System.out.println(grid.substring(6,9));
 	}

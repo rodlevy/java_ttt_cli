@@ -35,7 +35,7 @@ public class Computer {
           return;
         }
         if (board.playerMoves() == 3 && board.edgeCase()){
-          board.storePosition(6, 'X');
+          board.storePosition(6, 'O');
           return;
         }
         if (board.playerMoves() > board.computerMoves()){
