@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.016" errors="0" skipped="0" tests="16" name="com.mycompany.app.BoardTest">
+<testsuite failures="0" time="0.012" errors="0" skipped="0" tests="16" name="com.mycompany.app.BoardTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -65,20 +65,20 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0" classname="com.mycompany.app.BoardTest" name="board_should_check_if_same_player_opposite_corners"/>
-  <testcase time="0.001" classname="com.mycompany.app.BoardTest" name="should_return_availableMoves"/>
-  <testcase time="0.01" classname="com.mycompany.app.BoardTest" name="board_should_return_the_number_of_player_moves"/>
+  <testcase time="0.001" classname="com.mycompany.app.BoardTest" name="board_should_check_if_same_player_opposite_corners"/>
+  <testcase time="0" classname="com.mycompany.app.BoardTest" name="should_return_availableMoves"/>
+  <testcase time="0.008" classname="com.mycompany.app.BoardTest" name="board_should_return_the_number_of_player_moves"/>
   <testcase time="0" classname="com.mycompany.app.BoardTest" name="board_should_check_for_participant_win"/>
-  <testcase time="0.001" classname="com.mycompany.app.BoardTest" name="should_createNewGrid"/>
-  <testcase time="0" classname="com.mycompany.app.BoardTest" name="board_should_remove_position_of_player_moves"/>
+  <testcase time="0" classname="com.mycompany.app.BoardTest" name="should_createNewGrid"/>
+  <testcase time="0.001" classname="com.mycompany.app.BoardTest" name="board_should_remove_position_of_player_moves"/>
   <testcase time="0" classname="com.mycompany.app.BoardTest" name="should_checkIfOccupied"/>
   <testcase time="0" classname="com.mycompany.app.BoardTest" name="should_checkForWinner"/>
-  <testcase time="0" classname="com.mycompany.app.BoardTest" name="board_should_check_3rd_move_for_participant_win"/>
-  <testcase time="0.001" classname="com.mycompany.app.BoardTest" name="players_should_take_turns"/>
+  <testcase time="0.001" classname="com.mycompany.app.BoardTest" name="board_should_check_3rd_move_for_participant_win"/>
+  <testcase time="0" classname="com.mycompany.app.BoardTest" name="players_should_take_turns"/>
   <testcase time="0" classname="com.mycompany.app.BoardTest" name="board_should_check_top_left_corner_computer_bottom_rt_player"/>
-  <testcase time="0" classname="com.mycompany.app.BoardTest" name="board_should_check_edge_case"/>
-  <testcase time="0.001" classname="com.mycompany.app.BoardTest" name="board_should_return_the_number_of_computer_moves"/>
-  <testcase time="0.001" classname="com.mycompany.app.BoardTest" name="testWinningPossibilities"/>
+  <testcase time="0.001" classname="com.mycompany.app.BoardTest" name="board_should_check_edge_case"/>
+  <testcase time="0" classname="com.mycompany.app.BoardTest" name="board_should_return_the_number_of_computer_moves"/>
+  <testcase time="0" classname="com.mycompany.app.BoardTest" name="testWinningPossibilities"/>
   <testcase time="0" classname="com.mycompany.app.BoardTest" name="should_checkForTie"/>
-  <testcase time="0.001" classname="com.mycompany.app.BoardTest" name="board_should_store_position_of_player_moves"/>
+  <testcase time="0" classname="com.mycompany.app.BoardTest" name="board_should_store_position_of_player_moves"/>
 </testsuite>
