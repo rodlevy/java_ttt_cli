@@ -17,8 +17,12 @@ public class App
         Computer newComputer = new Computer();
         newGame = new Game(newBoard, newInterface, newComputer);
         newBoard.grid = "---------";
+        printInitialBoard();
+    }
+
+    public static void printInitialBoard(){
         System.out.println( "Let's Play Tic-Tac-Toe\n" );
-        System.out.println( "012\n345\n678" );
+        System.out.println( "\n012\n345\n678" );
         System.out.println("Where do you want to put your X?\n");
     }
 

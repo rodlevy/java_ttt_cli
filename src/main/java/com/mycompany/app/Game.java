@@ -19,6 +19,7 @@ public class Game {
 	  if(newBoard.isOccupied(grid, location)){
 	    newInterface.denied();
 	    play();
+	    return;
 	  }
 	  newBoard.storePosition(location, 'X');
 	  if(newBoard.playerMoves() + newBoard.computerMoves() == 9){
