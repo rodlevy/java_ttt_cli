@@ -13,14 +13,15 @@ import org.junit.Test;
 
 
 public class ComputerTest {
-//  
-//  @Before 
-//  public void initialize(){
-//    Board board = new Board();
-//  }
+  Board board;
+  
+  @Before 
+  public void initialize(){
+    board = new Board();
+  }
+  
 	@Test
 	public void test_first_move() throws Exception {
-		Board board = new Board();
 		board.grid = "-X-------";
 		Computer.firstMove(board);
 		assertTrue(board.grid.equals("-X--O----"));
@@ -28,7 +29,6 @@ public class ComputerTest {
 	
 	@Test
 	public void test_second_move() throws Exception{
-	  Board board = new Board();
     board.grid = "X---O---X";
     Computer.secondMove(board);
     assertTrue(board.grid.equals("X--OO---X"));
@@ -36,21 +36,18 @@ public class ComputerTest {
 	
 	@Test
 	public void test_computer_move() throws Exception{
-	  Board board = new Board();
 	  board.grid = "X---O---X";
 	  Computer.computerMove(board);
 	  assertTrue(board.grid.equals("X--OO---X"));
 	}
 	 @Test
 	  public void test_another_second_computer_move() throws Exception{
-	    Board board = new Board();
 	    board.grid = "XX--O----";
 	    Computer.computerMove(board);
 	    assertTrue(board.grid.equals("XXO-O----"));
 	  }
 	 @Test
 	 public void test_third_computer_move() throws Exception{
-	    Board board = new Board();
 	    board.grid = "X--OO--XX";
 	    Computer.computerMove(board);
 	    assertTrue(board.grid.equals("X--OOO-XX"));

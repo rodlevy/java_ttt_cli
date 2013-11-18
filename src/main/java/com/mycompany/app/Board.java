@@ -9,13 +9,6 @@ public class Board {
 	public static final String[] WINPOS = new String[]{"012", "345", "246", "678", "036","147","258","048"};
 	public static String grid = "---------";
 
-//	public static String printBoard(){
-//
-//		//		final String WINNINGPOSSIBILITIES = "hi";
-//		System.out.println("newerboard");
-//		return "";
-//	}
-
 	public static boolean checkForWinner(char player) {
 		for(String winner : WINPOS){
 

@@ -17,6 +17,7 @@ public class App
         Computer newComputer = new Computer();
         newGame = new Game(newBoard, newInterface, newComputer);
         newBoard.grid = "---------";
+        
         printInitialBoard();
     }
 
@@ -25,6 +26,4 @@ public class App
         System.out.println( "\n012\n345\n678" );
         System.out.println("Where do you want to put your X?\n");
     }
-
-
 }
