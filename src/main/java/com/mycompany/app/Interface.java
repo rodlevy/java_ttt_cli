@@ -26,22 +26,29 @@ public class Interface {
 			Scanner in = new Scanner(System.in);
 			String move = in.next();
 
-			if (isInteger(move)){
+			if (isValidMove(move)){
 				finalMove = Integer.parseInt(move);
 				isNotValid = false;
-			}else{
-				System.out.println("Please enter a valid number");
 			}
+//			}else{
+//				System.out.println("Please enter a valid number");
+//			}
 		}
 		return finalMove;
 	}
 
-	public static boolean isInteger( String input ) {
+	public static boolean isValidMove( String input ) {
 		try {
 			Integer.parseInt( input );
+			if(Integer.parseInt(input) > 8){
+			  System.out.println("Please enter a number less than 8");
+			  return false;
+			}else{
 			return true;
+			}
 		}
 		catch( Exception e ) {
+		  System.out.println("Please enter a valid number");
 			return false;
 		}
 	}
